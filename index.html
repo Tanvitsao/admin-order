@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/all.css">
+
+    <title>Shoptime</title>
+  </head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-0">
+        <a class="navbar-brand mx-5 " href="#">Shoptime</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active px-3 mr-4 b-bottom" href="index.html">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link px-3 mr-4" href="orders.html">ORDERS</a>
+                <a class="nav-item nav-link px-3" href="product.html">PRODUCT</a>
+            </div>
+            <div class="navbar-nav ml-auto">
+                <a class="nav-item nav-link px-3 text-white" href="#">ADMIN</a>
+            </div>>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="d-flex mt-4 mb-2">
+            <h3>OVERVIEW</h3>
+            <div class="ml-auto d-flex align-items-center">
+                <span class="text-secondary mr-1">2018/6/6</span>
+                <span class="text-dark mr-1">▸</span>
+                <span class="text-secondary mr-3">2018/6/13</span>
+                <div class="dropdown show">
+                    <a class="dropdown-toggle p-0 text-secondary" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Weekly
+                    </a>
+                
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#">Daily</a>
+                        <a class="dropdown-item active" href="#">Weekly</a>
+                        <a class="dropdown-item" href="#">Monthly</a>
+                        <a class="dropdown-item" href="#">Yearly</a>
+                        <a class="dropdown-item" href="#">Custom</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="bgColor text-center p-5">
+                    <div class="d-flex justify-content-center">
+                        <i class="fas fa-hand-holding-usd mr-2"></i>
+                        <h4 class="totalSize">TOTAL REVENUE</h4>
+                    </div>
+                    <h3 class="successColor">54,540</h3>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="bgColor text-center p-5">
+                    <div class="d-flex justify-content-center">
+                        <i class="fas fa-boxes mr-2"></i>
+                        <h4 class="totalSize">TOTAL COST</h4>
+                    </div>
+                    <h3 class="text-danger">12,660</h3>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="bgColor text-center p-5">
+                    <div class="d-flex justify-content-center">
+                        <i class="fas fa-money-bill mr-2"></i>
+                        <h4 class="totalSize">NET INCOME</h4>
+                    </div>
+                    <h3 class="text-primary">41,880</h3>
+                </div>
+            </div>
+        </div>
+        
+        <div class="bgColor p-5 mt-4">
+            <h3>Activity</h3>
+            <canvas id="chart"></canvas>
+        </div>
+
+        <div class="row mt-4 mb-5">
+            <div class="col-md-6">
+                <div class="bgColor py-4 px-5 h-100">
+                    <h3>Transaction Website</h3>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item d-flex align-items-center border-top-0 py-4">
+                            <i class="fab fa-facebook fa-3x mr-4" style="width: 48px"></i>
+                            <div class="text-secondary">Facebook.com</div>
+                            <div class="d-flex ml-auto">
+                                <strong class="text-dark">45,836</strong>
+                                <div class="ml-3 successColor" data-toggle="tooltip" data-placement="top" data-html="true" 
+                                title="<div class='p-2'><p class='m-0'>INCREASE <span class='successColor h5'>899</span> VIEWS</p>
+                                       <p class='font-italic m-0 text-secondary'>last week: 44,937</p></div>">
+                                    <i class="fas fa-arrow-up"></i>
+                                    20%
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item d-flex align-items-center py-4">
+                            <i class="fab fa-google fa-3x mr-4" style="width: 48px"></i>
+                            <div class="text-secondary">google.com</div>
+                            <div class="d-flex ml-auto">
+                                <strong class="text-dark">23,582</strong>
+                                <div class="ml-3 successColor">
+                                    <i class="fas fa-arrow-up"></i>
+                                    12%
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item d-flex align-items-center py-4">
+                            <i class="fas fa-shopping-bag fa-3x mr-4" style="width: 48px"></i>
+                            <div class="text-secondary">Shopify.com</div>
+                            <div class="d-flex ml-auto">
+                                <strong class="text-dark">2,489</strong>
+                                <div class="text-danger ml-3">
+                                    <i class="fas fa-arrow-down"></i>
+                                    15%
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item d-flex align-items-center py-4">
+                            <i class="fab fa-wordpress fa-3x mr-4" style="width: 48px"></i>
+                            <div class="text-secondary">Wordpress.com</div>
+                            <div class="d-flex ml-auto">
+                                <strong class="text-dark">1,057</strong>
+                                <div class="text-danger ml-3">
+                                    <i class="fas fa-arrow-down"></i>
+                                    30%
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="bgColor py-4 px-5 h-100">
+                    <h3>Latest Orders</h3>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item border-top-0">
+                            <div class="media align-items-center">
+                                <img class="mr-3" src="https://randomuser.me/api/portraits/women/87.jpg" width="100" height="100" alt="Generic placeholder image">
+                                <div class="media-body">
+                                    <h5>Vintage T-shirt</h5>
+                                    <div class="d-flex">
+                                        <div class="text-secondary">
+                                            <i class="fas fa-clock"></i>
+                                            2018/6/13 13:42
+                                        </div>
+                                        <div class="text-dark ml-auto">
+                                            Total
+                                        </div>
+                                    </div>
+                                    <div class="d-flex">
+                                      <div class="text-secondary text-center">
+                                            <i class="fas fa-male" style="width: 16px;"></i>
+                                            Belle Willis
+                                      </div>
+                                      <div class="font-weight-bold ml-auto">3,200</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="media  align-items-center">
+                                <img class="mr-3" src="https://randomuser.me/api/portraits/men/15.jpg" width="100" height="100" alt="Generic placeholder image">
+                                <div class="media-body">
+                                    <h5>Cowboy Jacket</h5>
+                                    <div class="d-flex">
+                                        <div class="text-secondary">
+                                            <i class="fas fa-clock"></i>
+                                            2018/6/13 10:15
+                                        </div>
+                                        <div class="text-dark ml-auto">
+                                            Total
+                                        </div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="text-secondary text-center">
+                                            <i class="fas fa-male" style="width: 16px"></i>
+                                            Adrian Cummings
+                                        </div>  
+                                        <div class="font-weight-bold ml-auto">2,800</div>
+                                    </div>
+                                </div>
+                            </div>                    
+                        </li>
+                        <li class="list-group-item">
+                            <div class="media  align-items-center">
+                                <img class="mr-3" src="https://randomuser.me/api/portraits/women/73.jpg" width="100" height="100" alt="Generic placeholder image">
+                                <div class="media-body">
+                                    <h5>Coach Coat</h5>
+                                    <div class="d-flex">
+                                        <div class="text-secondary">
+                                            <i class="fas fa-clock"></i>
+                                            2018/6/13 08:26
+                                        </div>
+                                        <div class="text-dark ml-auto">
+                                            Total
+                                        </div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="text-secondary  text-center">
+                                            <i class="fas fa-male" style="width: 16px"></i>
+                                            Lura Holland
+                                        </div> 
+                                        <div class="font-weight-bold ml-auto">1,600</div> 
+                                    </div>      
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+
+    
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- chart.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <!-- Optional JavaScript -->
+    <script src="js/index.js"></script>
+    <script>
+        // tooltips
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+</body>
+</html>

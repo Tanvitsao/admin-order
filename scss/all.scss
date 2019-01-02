@@ -1,0 +1,125 @@
+//font size
+$font-l:36px;
+$font-m:20px;
+$font-s:16px;
+
+// color
+$success-color:#7ED321;
+$upload-color: #EBEBEB;
+
+
+
+.modal-bg {
+    height: 120px;
+    width: 120px;
+    overflow: hidden;
+    position: relative;
+}
+
+.modal img, #productList img {
+    height: 100%;
+    position: absolute;
+}
+
+.deleteImg {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.7);
+    line-height: 18px;
+    border-radius: 50%;
+    cursor: pointer;
+    top: 5px;
+    right: 5px;
+    text-align: center;
+}
+
+.product-bg {
+    height: 80px;
+    width: 80px;
+    overflow: hidden;
+    position: relative;
+}
+
+.b-bottom {
+    border-bottom: 4px solid white;
+}
+
+html body {
+    background-color: #F2F2F2;
+}
+
+.totalSize {
+    font-size: $font-s;
+}
+
+.b-width {
+    width: 300px;
+}
+
+.bgColor {
+    background-color: #fff;
+}
+
+.bgSuccessColor {
+    background-color: $success-color;
+    color: #fff;
+}
+
+.successColor {
+    color: $success-color;
+}
+
+.table-inactive {
+    background-color: #ececec;
+    color: #b9b9b9;
+}
+
+.container .table tbody .table-selected {
+    background-color: #B5D1FC;
+}
+
+
+// 更改 Bootstrap4 pagination 的預設樣式
+.page-link {
+    color: #000;
+}
+
+.page-item.active .page-link {
+    background-color: #000;
+    border-color: #000;
+}
+
+
+
+
+
+textarea {
+    min-height: 150px;
+}
+
+.uploadColor {
+    background-color: $upload-color;
+}
+
+@media(min-width:992px){
+    .modal-lg {
+        max-width: 1000px;
+    }
+}
+
+.container .input-group-append .border-0 {
+    background-color: transparent;
+    width: 22px;
+    height: 36px;
+    padding: 1px;
+}
+
+.container .input-group-append .border-0:hover {
+    background-color: rgb(221, 217, 217);
+}
+
+.container .input-group-append .bg {
+    background-color: rgb(221, 217, 217);
+}
